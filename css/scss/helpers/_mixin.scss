@@ -1,0 +1,45 @@
+//media Queries  small screens
+@mixin smScreen {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+//media Queries  medium screens
+@mixin mdScreen {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+//media Queries  medium screens
+@mixin lgScreen {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+//overlay mixin 
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+//perfixer mixin
+@mixin perfixer($property,$value,$perfixes: ()) {
+    @each $perfix in $perfixes {
+        #{"-"+$perfix+'-'+$property}:$value;
+    }
+    #{$property}:$value;
+}
+//animation mixin
+@mixin keyFrame($animation-name){
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}

@@ -1,0 +1,47 @@
+.class {
+  -o-box-shadow: 10px 10px 10px #ccc;
+  -ms-box-shadow: 10px 10px 10px #ccc;
+  -webkit-box-shadow: 10px 10px 10px #ccc;
+          box-shadow: 10px 10px 10px #ccc;
+  -webkit-animation: fadein-out 3s linear infinite;
+          animation: fadein-out 3s linear infinite;
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+  background-color: black;
+}
+
+@-webkit-keyframes fadein-out {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein-out {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
