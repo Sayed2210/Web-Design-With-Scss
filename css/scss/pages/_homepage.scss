@@ -1,0 +1,85 @@
+.slider {
+    .container {
+        q{
+            font: italic 20px bold;
+            max-width: 80%;
+            margin: 30px auto;
+            display: block;
+            line-height: 1.7;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: 65vh;
+        }
+        .bullets {
+            @include flex-center;
+            gap: 5px;
+            li {
+                background-color: $geryColor;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                &.active {
+                    background-color: #fff;
+                    border-color: #000;
+                }
+            }
+        }
+    }
+}
+// service section
+.service-content {
+    @include flex;
+    gap: 20px;
+    h3 {
+        margin-bottom: 15px;
+        @include flex;
+        align-items: center;
+        i {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: $geryColor;
+        }
+    }
+    p {
+        color: $geryColor;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    a {
+        color: $redColor;
+        display: block;
+    }
+}
+//our players
+.our-players-content {
+    @include flex;
+    gap: 5px;
+    h4 {
+        font-weight: normal;
+        margin-bottom: 10px;
+        span {
+            font-weight: bold;
+        }
+    }
+    p {
+        color: $geryColor;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+    a {
+        color: $redColor;
+    }
+} 
+
+.lorem-ipsum {
+    .lorem-content {
+        @include flex;
+        justify-content: space-between;
+        img {
+            width: calc(98% / 3);
+        }
+    }
+}
