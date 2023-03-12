@@ -10,9 +10,15 @@
         @content;
     }
 }
-//media Queries  medium screens
+//media Queries  large screens
 @mixin lgScreen {
     @media (min-width: 992px) {
+        @content;
+    }
+}
+//media Queries  xlarge screens
+@mixin xlgScreen {
+    @media (min-width: 1200px) {
         @content;
     }
 }
@@ -42,4 +48,20 @@
     @keyframes #{$animation-name} {
         @content;
     }
+}
+//display flex
+@mixin flex {
+    display: flex;
+}
+//flex center
+@mixin flex-center {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+}
+//flex space between
+@mixin flex-between {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
 }

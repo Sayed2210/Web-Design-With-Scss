@@ -1,47 +1,63 @@
-.class {
-  -o-box-shadow: 10px 10px 10px #ccc;
-  -ms-box-shadow: 10px 10px 10px #ccc;
-  -webkit-box-shadow: 10px 10px 10px #ccc;
-          box-shadow: 10px 10px 10px #ccc;
-  -webkit-animation: fadein-out 3s linear infinite;
-          animation: fadein-out 3s linear infinite;
-  height: 200px;
-  width: 200px;
-  margin: 20px auto;
-  background-color: black;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@-webkit-keyframes fadein-out {
-  0% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Medium Screen (Ipad)*/
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
   }
 }
-@keyframes fadein-out {
-  0% {
-    opacity: 0.1;
+/*small lap Screen*/
+@media (min-width: 992px) {
+  .container {
+    width: 720px;
   }
-  20% {
-    opacity: 0.4;
+}
+/* big Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
   }
-  50% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
+}
+body {
+  background-color: #f6f6f6;
+}
+body font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+.header .container .navbar li {
+  padding: 5px 10px;
 }

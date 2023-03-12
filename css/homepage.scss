@@ -4,6 +4,10 @@
 @import 'scss/helpers/mixin';
 //import functions
 @import 'scss/helpers/functions';
+//import grid system
+@import 'scss/layout/grid';
+//import global page
+@import 'scss/pages/globalpage';
 //import header
 @import 'scss/layout/header';
 //import page

@@ -1,0 +1,16 @@
+.header {
+    .container {
+        @include flex-between;
+        .logo {
+            
+        }
+        .navbar {
+            @include flex;
+            align-items: center;
+            list-style: none;
+            li {
+                padding: 5px 10px;
+            }
+        }
+    }
+}
