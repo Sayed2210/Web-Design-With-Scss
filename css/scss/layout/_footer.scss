@@ -1,0 +1,12 @@
+.footer {
+    background-color: #ccc;
+    padding-top: 50px;
+    .container {
+        @include flex;
+        gap: 10px;
+        .main-title {
+            margin-bottom: 10px;
+        }
+    }
+
+}
