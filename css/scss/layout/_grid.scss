@@ -11,22 +11,16 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-}
-/*Medium Screen (Ipad)*/
-@include mdScreen {
-    .container {
-        width: 720px;
+    /*Medium Screen (Ipad)*/
+    @include mdScreen {
+            width: 720px;
     }
-}
-/*small lap Screen*/ 
-@include lgScreen { 
-    .container {
-        width: 720px;
+    /*small lap Screen*/ 
+    @include lgScreen { 
+            width: 940px;
     }
-}
-/* big Screen */
-@include xlgScreen {
-    .container {
-        width: 1140px;
+    /* big Screen */
+    @include xlgScreen {
+            width: 1140px;
     }
 }

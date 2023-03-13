@@ -1,6 +1,12 @@
+//media Queries  xsmall screens
+@mixin xsScreen {
+    @media (max-width: 565px) {
+        @content;
+    }
+}
 //media Queries  small screens
 @mixin smScreen {
-    @media (max-width: 576px) {
+    @media (max-width: 767px) {
         @content;
     }
 }
@@ -12,7 +18,7 @@
 }
 //media Queries  large screens
 @mixin lgScreen {
-    @media (min-width: 992px) {
+    @media (min-width: 962px) {
         @content;
     }
 }

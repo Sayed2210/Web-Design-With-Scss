@@ -6,6 +6,8 @@
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5px;
+    max-width: 100px;
+    display: block;
     @include smooth;
     &:hover {
         background-color: $redColor;
